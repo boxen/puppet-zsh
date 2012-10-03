@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# FIXME: add specs
+script/bootstrap && script/syntax && script/lint # && script/specs

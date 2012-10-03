@@ -1,8 +1,5 @@
 class zsh {
-  package { 'zsh':
-    ensure   => latest,
-    provider => 'homebrew'
-  }
+  package { 'zsh': }
 
   file_line { 'add zsh to /etc/shells':
     path    => '/etc/shells',

@@ -1,0 +1,19 @@
+GITHUBTARBALL
+  remote: boxen/puppet-boxen
+  specs:
+    boxen (0.0.25)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (0.0.1)
+
+GITHUBTARBALL
+  remote: puppetlabs/puppetlabs-stdlib
+  specs:
+    boxen (3.0.0)
+
+DEPENDENCIES
+  boxen (= 0.0.25)
+  osx (= 0.0.1)
+  stdlib (= 3.0.0)

@@ -5,6 +5,8 @@
 #
 #   include zsh
 class zsh {
+  require boxen::config
+
   package { 'zsh': }
 
   file_line { 'add zsh to /etc/shells':

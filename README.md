@@ -4,6 +4,7 @@ Requires the following boxen modules:
 
 * `boxen`
 * `homebrew`
+* `osx`
 
 ## Usage
 

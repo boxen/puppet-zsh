@@ -1,10 +1,6 @@
 # ZSH Puppet Module for Boxen
 
-Requires the following boxen modules:
-
-* `boxen`
-* `homebrew`
-* `osx`
+Installs zsh and makes it your default shell. For justice.
 
 ## Usage
 
@@ -12,8 +8,16 @@ Requires the following boxen modules:
 include zsh
 ```
 
+# Required Puppet Modules
+
+* `boxen`
+* `homebrew`
+* `osx`
+* `stdlib`
+
 ## Developing
 
 Write code.
 
-Run `script/cibuild`.
+Write code. Run `script/cibuild`. Send Pull Requests.
+

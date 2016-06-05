@@ -9,7 +9,9 @@ describe 'zsh' do
   end
 
   it do
-    should contain_package('zsh')
+    should contain_package('zsh').with({
+      :ensure => 'present'
+    })
 
     should contain_file_line('add zsh to /etc/shells').with({
       :path    => '/etc/shells',
@@ -21,5 +23,14 @@ describe 'zsh' do
       :shell   => "#{facts[:boxen_home]}/homebrew/bin/zsh",
       :require => 'File_line[add zsh to /etc/shells]'
     })
+  end
+
+  context "ensure is latest" do
+    let(:params) {
+      { :ensure => "latest" }
+    }
+    it { should contain_package('zsh').with({
+      :ensure => 'latest'
+    }) }
   end
 end
